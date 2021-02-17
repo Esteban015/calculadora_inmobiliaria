@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Aquisicion Inmobiliaria</title>
+    <!-- Custom CSS -->
+    <link href="lib/css/calc.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="page-header">
+          <h1>Calculadora de Adquisicion Inmobiliario</h1>
+        </div>
+  
+        <div class="form-area">
+          <form role="form">
+            <div class="salary">
+              <label for="sueldoBruto">💲 ¿Cuál es tu sueldo neto mensual?</label>
+              <!-- $ -->
+              <input
+                type="text"
+                name="sueldoBruto"
+                id="sueldoBruto"
+                value="0.0"
+              />
+              <!-- .00 -->
+              <p class="help-block">Ingrese su Sueldo Neto</p>
+            </div>
+            <div class="mts">
+              <label for="metrosCuadrados">🏠 Metros Cuadrados</label>
+              <input 
+                type="text"
+                name="metrosCuadrados"
+                id="metrosCuadrados"
+                value="0"
+                />
+                <p class="help-block">Ingrese la cantidad de metros cuadrado del inmueble</p>
+            </div>
+  
+            <div class="button">
+              <button id="calcular" type="button" class="btn-submit">
+                Calcular
+              </button>
+            </div>
+          </form>
+        </div>
+  
+        <div id="result" class="result-container">
+          <div class="info-item">
+            <h4 class="name">Precio estimado del Inmueble</h4>
+            <h4 class="value" id="precioInmueble">0,00</h4>
+          </div>
+          <div class="info-item main-item">
+            <h4 class="name">Cantidad de Años</h4>
+            <h4 class="value" id="tiempoTotal">0</h4>
+            <p class="help-block" style="color: white;">Entregando inicialmente el 20% del valor del inmueble</p>
+          </div>
+          <div class="info-item">
+            <h4 class="name">Precio estimado del Alquiler</h4>
+            <h4 class="value" id="precioAlquiler">0,00</h4>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-area">
+        <div>Desarrollada por <a href="https://www.lagaceta.com.ar/" title="La Gaceta">La Gaceta</a></div>
+      </footer>
+    <script src="lib/js/calc.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script defer src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="lib/js/jquery.min.js"></script>
+
+</body>
+</html>
